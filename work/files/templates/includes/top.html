@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    	
+    	<meta charset="utf-8">
+    	
+    	<meta name="viewport" content="width=device-width">
+
+        <!-- @if NODE_ENV == 'DEVELOPMENT' -->
+        
+        <title><!--@echo title--> | v<!--@echo version--> | <!--@echo NODE_ENV--></title>
+        
+        <!-- @endif -->
+
+        <!-- @if NODE_ENV == 'PRODUCTION' -->
+        
+        <title><!--@echo title--> | <!--@echo description--></title>
+        
+        <!-- @endif -->
+        
+    	<meta name="description" content="<!--@echo description-->">
+
+    	<meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+        <link rel="shortcut icon" href="./img/favicon.png">
+        <link rel="stylesheet" href="./js/vendor/bootstrap/bootstrap.css">
+
+        <!-- Formvalidation.io -->
+        <link rel="stylesheet" href="./js/vendor/form.validation/dist/css/formValidation.min.css">
+    	
+    	<!-- @if NODE_ENV == 'DEVELOPMENT' -->
+    	
+    	<link rel="stylesheet" href="./css/development.css">
+    	
+    	<!-- @endif -->
+    	
+    	<!-- @if NODE_ENV == 'PRODUCTION' -->
+    	
+    	<link rel="stylesheet" href="./css/<!-- @echo name -->.<!-- @echo version -->.<!-- @echo now -->.<!-- @echo ver -->.min.css">
+    	
+    	<!-- @endif -->
+
+    </head>
+    <body>

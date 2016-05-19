@@ -1,0 +1,41 @@
+
+	   <!-- Placed at the end of the document so the pages load faster -->
+    	
+        <script src="./js/vendor/jquery/jquery.js"></script>
+        <script src="./js/vendor/bootstrap/bootstrap.js"></script>
+        <script src="./js/jquery.cookie.js"></script>
+        <script src="./js/vendor/fastclick/fastclick.js"></script>
+
+        <!-- Formvalidation.io -->
+        <script src="./js/vendor/form.validation/dist/js/formValidation.min.js"></script>
+        <script src="./js/vendor/form.validation/dist/js/framework/bootstrap.min.js"></script>
+
+        <!-- @if NODE_ENV == 'DEVELOPMENT' -->
+        
+        <script src="./js/<!-- @echo name -->.js"></script>
+        <script src="./js/<!-- @echo name -->.mod.fastclick.js"></script>
+        <script src="./js/<!-- @echo name -->.init.js"></script>
+        <script src="./js/development.js"></script>
+        
+        <script>
+            
+            $(function() {});
+            
+            $(document).ready(function() {});
+            
+            $(window).load(function() {});
+            
+            $(window).resize(function() {});
+            
+        </script>
+        
+        <!-- @endif -->
+    	
+    	<!-- @if NODE_ENV == 'PRODUCTION' -->
+    	
+        <script src="./js/<!-- @echo name -->.<!-- @echo version -->.<!-- @echo now -->.<!-- @echo ver -->.min.js"></script>
+
+    	<!-- @endif -->
+    	
+    </body>
+</html>
